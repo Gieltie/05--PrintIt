@@ -1,3 +1,9 @@
+let btnLeft = document.querySelector('.arrow_left');
+let btnRight = document.querySelector('.arrow_right');
+
+btnLeft.addEventListener('click', function(){alert('gauche')});
+btnRight.addEventListener('click', function(){alert('droite')});
+
 const slides = [
 	{
 		"image":"slide1.jpg",
