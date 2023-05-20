@@ -7,6 +7,9 @@ let index = 0;
 
 btnRight.addEventListener('click', function(){
 	index++;
+	if (index === slides.length) {
+		index = 0;
+	}
 	banner.src = `./assets/images/slideshow/${slides[index].image}`;
 	tagLine.innerHTML = slides[index].tagLine;
 	dots.forEach(function(dot) {
@@ -17,6 +20,9 @@ btnRight.addEventListener('click', function(){
 
 btnLeft.addEventListener('click', function(){
 	index--;
+	if (index < 0) {
+		index = slides.length - 1;
+	}
 	banner.src = `./assets/images/slideshow/${slides[index].image}`;
 	tagLine.innerHTML = slides[index].tagLine;
 	dots.forEach(function(dot) {
