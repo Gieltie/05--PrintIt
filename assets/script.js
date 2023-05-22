@@ -1,11 +1,11 @@
-let btnLeft = document.querySelector('.arrow_left');
-let btnRight = document.querySelector('.arrow_right');
+let btnLeft = document.getElementsByClassName('arrow_left');
+let btnRight = document.getElementsByClassName('arrow_right');
 let banner = document.querySelector('.banner_img');
 let tagLine = document.querySelector('.tagLine');
 let dots = document.querySelectorAll('.dot');
 let index = 0;
 
-btnRight.addEventListener('click', function(){
+btnRight[0].addEventListener('click', function(){
 	index++;
 	if (index === slides.length) {
 		index = 0;
@@ -18,7 +18,7 @@ btnRight.addEventListener('click', function(){
 	dots[index].classList.add('dot_selected');
 });
 
-btnLeft.addEventListener('click', function(){
+btnLeft[0].addEventListener('click', function(){
 	index--;
 	if (index < 0) {
 		index = slides.length - 1;
