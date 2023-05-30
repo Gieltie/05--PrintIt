@@ -1,5 +1,5 @@
-let btnLeft = document.getElementsByClassName('arrow_left');
-let btnRight = document.getElementsByClassName('arrow_right');
+let btnLeft = document.getElementsByClassName("arrow_left");
+let btnRight = document.getElementsByClassName("arrow_right");
 let banner = document.querySelector('.banner_img');
 let tagLine = document.querySelector('.tagLine');
 let dots = document.querySelectorAll('.dot');
